@@ -1,0 +1,20 @@
+.Sidebar {
+    height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width);
+    background: var(--inverted-bg-collor);
+    position: relative;
+    transition: width 0.3s;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.minimal {
+    width: var(--sidebar-width-collapsed);
+}
+
+.menu {
+    padding-left: 20px;
+    color: var(--bg-collor);
+}

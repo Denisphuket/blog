@@ -1,0 +1,15 @@
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--bg-collor);
+}
+
+.minimal {
+    padding-left: 60px;
+    transition: padding-left 0.3s;
+}
+
+.open {
+    padding-left: 240px;
+    transition: padding-left 0.3s;
+}
