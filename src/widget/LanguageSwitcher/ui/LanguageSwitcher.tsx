@@ -17,6 +17,7 @@ export const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
 
     return (
         <Button
+            data-testid="toggle-button"
             onClick={toggle}
             className={classNames(cls.LanguageSwitcher, {}, [className])}
         >

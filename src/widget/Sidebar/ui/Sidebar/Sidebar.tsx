@@ -12,7 +12,10 @@ export const Sidebar = ({ className }: SidebarProps) => {
     const { sidebar } = useSidebar();
 
     return (
-        <div className={classNames(cls.Sidebar, {}, [className, cls[sidebar]])}>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, {}, [className, cls[sidebar]])}
+        >
 
             <div className={cls.menu}>
                 <div>{t('Меню')}</div>

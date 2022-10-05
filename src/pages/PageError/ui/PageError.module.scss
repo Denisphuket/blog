@@ -1,0 +1,23 @@
+.PageError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    padding: 40px;
+    font-size: 40px;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--bg-collor);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}

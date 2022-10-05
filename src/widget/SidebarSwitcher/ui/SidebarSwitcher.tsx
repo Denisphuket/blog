@@ -12,6 +12,7 @@ export const SidebarSwitcher = ({ className }:SidebarSwitcherProps) => {
 
     return (
         <Button
+            data-testid="sidebar-toggle"
             onClick={toggleSidebar}
             className={classNames(cls.SidebarSwitcher, {}, [className, cls[sidebar]])}
         >
