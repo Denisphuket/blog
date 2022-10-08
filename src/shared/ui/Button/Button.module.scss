@@ -1,5 +1,29 @@
 .Button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #495057;
     cursor: pointer;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.47rem 0.75rem;
+    text-align: center;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    vertical-align: middle;
+}
+
+.Button:focus {
+    box-shadow: 0 0 0 0.15rem rgb(81 86 190 / 25%);
+    outline: 0;
 }
 
 .clear {
@@ -8,4 +32,37 @@
     border: none;
     background: none;
     outline: none;
+}
+
+.primary {
+    box-shadow: 0 2px 6px 0 rgb(81 86 190 / 50%);
+    border-color: var(--bs-primary);
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    transition: all 0.3s linear;
+}
+
+.primary:focus {
+    box-shadow: 0 0 0 0.15rem rgb(107 111 200 / 50%);
+}
+
+.primary:hover {
+    background-color: #4549a2;
+    border-color: #414598;
+    color: #fff;
+}
+
+.primary:active {
+    box-shadow: 0 0 0 0.15rem rgb(107 111 200 / 50%);
+}
+
+.secondary {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.outline {
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-inv-blue);
+    background: none;
 }

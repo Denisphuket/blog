@@ -1,9 +1,10 @@
 .Sidebar {
     height: calc(100vh - var(--navbar-height));
     width: var(--sidebar-width);
-    background: var(--inverted-bg-collor);
+    background: var(--bs-inv-gray-900);
     position: relative;
     transition: width 0.3s;
+    border-right: 1px solid var(--bs-inv-gray-600);
 }
 
 .collapsed {
@@ -16,5 +17,5 @@
 
 .menu {
     padding-left: 20px;
-    color: var(--bg-collor);
+    color: var(--bs-inv-gray-100);
 }

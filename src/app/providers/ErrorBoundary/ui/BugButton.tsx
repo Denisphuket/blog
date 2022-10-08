@@ -1,6 +1,5 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Button } from 'shared/ui/Button/Button';
+import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { useEffect, useState } from 'react';
 
 export const BugButton = () => {
@@ -17,6 +16,7 @@ export const BugButton = () => {
     const toggle = () => setError(true);
     return (
         <Button
+            theme={ThemeButton.PRIMARY}
             type="button"
             onClick={toggle}
         >
