@@ -1,4 +1,4 @@
-import { NotFoundPage } from './ui/notFoundPage';
+import { NotFoundPage } from './ui/NotFoundPage';
 
 export {
     NotFoundPage,
