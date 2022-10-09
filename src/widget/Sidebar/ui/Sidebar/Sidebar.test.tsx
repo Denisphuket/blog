@@ -1,30 +1,21 @@
 import { fireEvent, screen } from '@testing-library/react';
-import {
-    renderWitchTranslation,
-} from 'shared/lib/test/renderWitchTranslation/renderWitchTranslation';
-import { BrowserRouter } from 'react-router-dom';
 import { SidebarSwitcher } from 'widget/SidebarSwitcher';
 import { SidebarProvider } from 'app/providers/SidebarProvider';
+import { ComponentRender } from 'shared/lib/test/componentRender/componentRender';
 import { Sidebar } from './Sidebar';
 
 describe('Sidebar.test', () => {
     test('get sidebar', () => {
-        renderWitchTranslation(
-            <BrowserRouter>
-                <Sidebar />
-            </BrowserRouter>,
-        );
+        ComponentRender(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     });
 
     test('sidebar toggle', () => {
-        renderWitchTranslation(
-            <BrowserRouter>
-                <SidebarProvider>
-                    <SidebarSwitcher />
-                    <Sidebar />
-                </SidebarProvider>
-            </BrowserRouter>,
+        ComponentRender(
+            <SidebarProvider>
+                <SidebarSwitcher />
+                <Sidebar />
+            </SidebarProvider>,
         );
         expect(screen.getByTestId('sidebar-toggle')).toBeInTheDocument();
         const toggleButton = screen.getByTestId('sidebar-toggle');
