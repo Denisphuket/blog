@@ -21,11 +21,6 @@
     vertical-align: middle;
 }
 
-.Button:focus {
-    box-shadow: 0 0 0 0.15rem rgb(81 86 190 / 25%);
-    outline: 0;
-}
-
 .clear {
     margin: 0;
     padding: 0;
@@ -43,7 +38,7 @@
 }
 
 .primary:focus {
-    box-shadow: 0 0 0 0.15rem rgb(107 111 200 / 50%);
+    box-shadow: 0 0 0 0.15rem rgb(81 86 190 / 25%);
 }
 
 .primary:hover {
@@ -53,7 +48,7 @@
 }
 
 .primary:active {
-    box-shadow: 0 0 0 0.15rem rgb(107 111 200 / 50%);
+    box-shadow: 0 0 0 0.15rem rgb(45 46 129 / 50%);
 }
 
 .secondary {

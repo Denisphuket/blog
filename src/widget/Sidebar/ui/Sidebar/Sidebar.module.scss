@@ -7,15 +7,50 @@
     border-right: 1px solid var(--bs-inv-gray-600);
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
+.link {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
 }
 
 .minimal {
     width: var(--sidebar-width-collapsed);
-}
 
-.menu {
-    padding-left: 20px;
-    color: var(--bs-inv-gray-100);
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .link {
+        display: none;
+        transition: 0.3s display;
+        width: 0;
+        height: 0;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
 }
