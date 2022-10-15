@@ -13,6 +13,32 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
+export const Clear = Template.bind({});
+Clear.args = {
+    children: 'Тест Primary',
+    theme: ThemeButton.CLEAR,
+};
+
+export const ClearDark = Template.bind({});
+ClearDark.args = {
+    children: 'Тест Primary',
+    theme: ThemeButton.CLEAR,
+};
+ClearDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+    children: 'Тест Primary',
+    theme: ThemeButton.CLEAR_INVERTED,
+};
+
+export const ClearInvertedDark = Template.bind({});
+ClearInvertedDark.args = {
+    children: 'Тест Primary',
+    theme: ThemeButton.CLEAR_INVERTED,
+};
+ClearInvertedDark.decorators = [ThemeDecorator(Theme.DARK)];
+
 export const PrimaryLight = Template.bind({});
 PrimaryLight.args = {
     children: 'Тест Primary',

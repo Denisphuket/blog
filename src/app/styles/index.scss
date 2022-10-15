@@ -3,10 +3,13 @@
 @import "./themes/light";
 @import "./variables/global";
 
-.app {
+.body {
     font: var(--font-m);
+    color: var(--bs-primary);
+}
+
+.app {
     background: var(--bs-inv-gray-800);
-    color: var(--primary-color);
     min-height: 100vh;
 }
 
