@@ -1,5 +1,7 @@
 {
   "BugButton": "BugButton",
+  "decrement": "decrement",
+  "increment": "increment",
   "Войти": "Войти",
   "Главная": "Главная",
   "Загрузка": "Загрузка",
