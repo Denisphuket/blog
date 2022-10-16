@@ -9,9 +9,6 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    args: {
-        to: '/',
-    },
 } as ComponentMeta<typeof Modal>;
 
 const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
@@ -21,6 +18,7 @@ ModalLight.args = {
     isOpen: true,
     children: <div>ModalLight</div>,
 };
+ModalLight.decorators = [ThemeDecorator(Theme.LIGHT)];
 
 export const ModalDark = Template.bind({});
 ModalDark.args = {
