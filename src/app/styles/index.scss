@@ -9,6 +9,8 @@ body {
 }
 
 .app {
+    font: var(--font-m);
+    color: var(--bs-primary);
     background: var(--bs-inv-gray-800);
     min-height: 100vh;
 }
