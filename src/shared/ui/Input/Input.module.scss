@@ -1,0 +1,19 @@
+.input {
+    appearance: none;
+    background-clip: padding-box;
+    background-color: var(--bg-collor);
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: var(--inverted-bg-collor);
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.47rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+}
+
+.placeholder {
+    margin-bottom: 3px;
+}
