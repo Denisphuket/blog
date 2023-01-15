@@ -36,7 +36,7 @@ export function BuildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const cssLoader = buildCssLoaders(isDev);
     const fileLoader = {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(txt|ttf|eot|jpg|gif|png|woff|woff2)$/,
         loader: 'file-loader',
         options: {
             name: '[name].[ext]',

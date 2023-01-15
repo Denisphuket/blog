@@ -40,13 +40,17 @@ module.exports = {
         'no-tabs': 0,
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
+        'jsx-a11y/tabindex-no-positive': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['to', 'data-testid'],
+            ignoreAttribute: [
+                'to', 'data-testid', 'for', 'color', 'alt',
+                'mask', 'position', 'label', 'name',
+            ],
         }],
         'max-len': ['error', {
             ignoreComments: true,
-            code: 100,
+            code: 130,
         }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
@@ -54,6 +58,7 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true,
+        __NUXT__: true,
     },
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts,tsx}'],

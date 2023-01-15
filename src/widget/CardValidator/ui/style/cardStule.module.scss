@@ -1,0 +1,116 @@
+.oderInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.textInfo {
+    text-align: left;
+    font-size: 24px;
+}
+
+.textProduct {
+    text-align: left;
+    font-size: 18px;
+}
+
+.textSum {
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.cardAllBlock {
+    margin-top: 30px;
+}
+
+.imgLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.logoPayment {
+    display: flex;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.label {
+    width: 100%;
+    text-align: left;
+    color: #7a7979;
+}
+
+.cardDataInfo {
+    padding-top: 20px;
+}
+
+.cardInformation {
+    margin: 15px;
+}
+
+.cross {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    color: #7a7979;
+}
+
+.cardExp {
+    display: flex;
+    flex-direction: row;
+    max-width: 40%;
+}
+
+.secCardBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.secCard {
+    background-color: #eaedef;
+    z-index: 10;
+}
+
+.secCardInput {
+    display: flex;
+    flex-direction: row;
+    max-width: 60px;
+    max-height: 40px;
+}
+
+.textSec {
+    color: #7a7979;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.paymentButton {
+    width: 100%;
+    height: 55px;
+    margin-top: 30px;
+}
+
+.footerLogo {
+    margin-top: 30px;
+}
+
+.footerLogoPayment {
+    width: 100%;
+    height: 100%;
+}
+
+.inputNumber {
+    width: 100%;
+}
+
+.inputMonth {
+    width: 60px;
+}
+
+.inputYear {
+    width: 60px;
+}
+
+.cvcInput {
+    width: 60px;
+}

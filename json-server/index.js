@@ -39,15 +39,42 @@ server.post('/login', (req, res) => {
     }
 });
 
+// Эндпоинт для создания ссылки
+server.post('/create', (req, res) => {
+    try {
+        console.log(req.body);
+        return res.redirect('http://localhost:3000/23423423sadasd');
+    } catch (e) {
+        console.log(e);
+        return res.status(500).json({ message: e.message });
+    }
+});
+
+// Эндпойнт для заказа
+server.post('/:id', (req, res) => {
+    try {
+        return res.status(200).json({
+            number: '213123',
+            product: 'windows 11 ru',
+            sum: 2000,
+            count: 2,
+        });
+        // throw new Error('Заказа нет');
+    } catch (e) {
+        console.log(e);
+        return res.status(500).json({ message: e.message });
+    }
+});
+
 // проверяем, авторизован ли пользователь
 // eslint-disable-next-line
-server.use((req, res, next) => {
-    if (!req.headers.authorization) {
-        return res.status(403).json({ message: 'AUTH ERROR' });
-    }
-
-    next();
-});
+// server.use((req, res, next) => {
+//     if (!req.headers.authorization) {
+//         return res.status(403).json({ message: 'AUTH ERROR' });
+//     }
+//
+//     next();
+// });
 
 server.use(router);
 

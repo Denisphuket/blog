@@ -17,3 +17,11 @@ declare module '*.jpg';
 declare module '*.jpeg';
 
 declare const __IS_DEV__: boolean;
+
+declare module 'crypto-browserify' {
+	export function publicEncrypt(options: any, buffer: Uint8Array): any;
+	export function privateDecrypt(options: any, buffer: Uint8Array): any;
+	export function randomBytes(size: number): any;
+}
+
+declare function btoa(data: string): string;

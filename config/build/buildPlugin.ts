@@ -1,5 +1,6 @@
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
+import Dotenv from 'dotenv-webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
@@ -15,8 +16,10 @@ export function BuildPlugin({ paths, isDev }: BuildOptions): webpack.WebpackPlug
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }),
+        new Dotenv(),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
+            // process: { env: {} },
         }),
 
     ];

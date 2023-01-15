@@ -18,7 +18,7 @@ function AppRouter() {
                             <PageLoader />
                         )}
                         >
-                            <div className="page-wrapper">
+                            <div>
                                 {element}
                             </div>
                         </Suspense>

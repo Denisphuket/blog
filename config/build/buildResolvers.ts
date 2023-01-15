@@ -8,5 +8,9 @@ export function BuildResolvers(options: BuildOptions): ResolveOptions {
         modules: [options.paths.src, 'node_modules'],
         mainFiles: ['index'],
         alias: {},
+        fallback: {
+            stream: false,
+            'crypto-browserify': require.resolve('crypto-browserify'),
+        },
     };
 }

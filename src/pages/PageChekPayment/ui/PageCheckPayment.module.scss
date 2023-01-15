@@ -1,0 +1,68 @@
+.PageCheckPayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 400px;
+}
+
+.statusCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconStatus {
+    width: 100px;
+    height: 100px;
+}
+
+.textStatus {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.paymentDetail {
+    margin-top: 15px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.paymentDetailRight {
+    display: flex;
+    flex-direction: row;
+}
+
+.paymentDetailRightPadding {
+    padding-left: 10px;
+}
+
+.line {
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 1px solid #b6b6b6; /* Параметры линии */
+}
+
+.buttonBackToSite {
+    margin-top: 35px;
+    height: 40px;
+    width: 100%;
+}
