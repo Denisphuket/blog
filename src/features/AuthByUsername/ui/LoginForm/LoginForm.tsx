@@ -15,13 +15,6 @@ export const LoginForm = (props: LoginFormProps) => {
 
     const { t } = useTranslation();
 
-    const [login, setLogin] = useState('');
-    const [password, setPassword] = useState('');
-
-    const onChangeLoginHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setLogin(e.target.value);
-    };
-
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
             <Input

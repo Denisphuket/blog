@@ -11,7 +11,8 @@
     "esModuleInterop" : true,
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": ["./src/*"],
+      "btoa": ["./app/types/global.d.ts"]
     }
   },
   "ts-node": {
